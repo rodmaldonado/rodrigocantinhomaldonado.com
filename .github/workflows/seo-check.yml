@@ -1,0 +1,19 @@
+name: SEO and link checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: sh scripts/build.sh
+      - run: pip install beautifulsoup4 lxml
+      - run: python scripts/validate_site.py public
