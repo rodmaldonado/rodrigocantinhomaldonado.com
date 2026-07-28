@@ -1,0 +1,9 @@
+[build]
+  command = "sh scripts/build.sh"
+  publish = "public"
+
+[build.processing]
+  skip_processing = false
+
+[build.processing.html]
+  pretty_urls = true
