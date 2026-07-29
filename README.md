@@ -5,7 +5,7 @@ Site estático da marca pessoal de Rodrigo Cantinho Maldonado, preparado para de
 ## Conteúdo publicado
 
 - Home, Sobre, Projetos, Artigos e Contato
-- 8 artigos autorais
+- 12 artigos autorais
 - páginas dos projetos The Quinta Experience e Morar em Ipanema
 - sitemap, robots.txt, RSS, dados estruturados, Open Graph e Twitter Cards
 - headers de segurança, cache e redirecionamento de `www`
@@ -13,7 +13,7 @@ Site estático da marca pessoal de Rodrigo Cantinho Maldonado, preparado para de
 
 ## Build
 
-O conteúdo público está em um pacote compacto versionado em quatro partes. O build recria a pasta `public/`:
+O conteúdo público está em um pacote compacto versionado em cinco partes. O build recria a pasta `public/`:
 
 ```bash
 sh scripts/build.sh
