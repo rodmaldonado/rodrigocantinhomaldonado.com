@@ -8,6 +8,7 @@ cat site.part.00 site.part.01 site.part.02 site.part.03 site.part.04 > site.tar.
 tar -xzf site.tar.gz -C public
 
 python3 scripts/expand_seo_hospitality.py
+python3 scripts/expand_authority_phase2.py
 
 if python3 -c "import bs4, lxml" >/dev/null 2>&1; then
   python3 scripts/validate_site.py public
