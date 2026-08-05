@@ -14,7 +14,6 @@ concurrency:
 
 jobs:
   deploy:
-    if: ${{ secrets.NETLIFY_AUTH_TOKEN != '' && secrets.NETLIFY_SITE_ID != '' }}
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
