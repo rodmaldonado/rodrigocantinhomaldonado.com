@@ -7,3 +7,9 @@
 
 [build.processing.html]
   pretty_urls = true
+
+[[redirects]]
+  from = "https://www.rodrigocantinhomaldonado.com/*"
+  to   = "https://rodrigocantinhomaldonado.com/:splat"
+  status = 301
+  force  = true
